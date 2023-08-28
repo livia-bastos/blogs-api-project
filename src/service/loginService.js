@@ -7,7 +7,6 @@ const postLogin = async (userData) => {
       password: userData.password,
     },
   });
-console.log(user)
   return user;
 };
 
