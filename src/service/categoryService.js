@@ -15,7 +15,7 @@ const findByName = async (name) => {
 };
 
 const findAll = async () => {
-  const returnedCat = await Category.findAll({ attributes: ['name'] });
+  const returnedCat = await Category.findAll({ attributes: ['id', 'name'] });
   return returnedCat;
 };
 
