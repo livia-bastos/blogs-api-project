@@ -2,11 +2,11 @@ const route = require('express').Router();
 const { postController } = require('../controller');
 const { validateToken } = require('../middlewares/tokenMiddleware');
 
-route.post(
-  '/',
-  validateToken,
-  postController.createPost,
-);
+// route.post(
+//   '/',
+//   validateToken,
+//   postController.createPost,
+// );
 
 route.get(
   '/',
